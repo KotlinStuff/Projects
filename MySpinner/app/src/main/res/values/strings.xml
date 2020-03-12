@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Spinner</string>
+    <string name="text_label">"Nombres: "</string>
+    <string-array name="array_nombres">
+        <item>Selecciona un elemento</item>
+        <item>Javier</item>
+        <item>Nacho</item>
+        <item>Patricia</item>
+        <item>Miguel</item>
+        <item>Susana</item>
+        <item>Rosa</item>
+        <item>Juan</item>
+        <item>Pedro</item>
+        <item>Asunción</item>
+        <item>Antonio</item>
+        <item>Lorena</item>
+        <item>Verónica</item>
+        <item>Paola</item>
+        <item>Esteban</item>
+        <item>Andrea</item>
+        <item>María</item>
+    </string-array>
+</resources>
