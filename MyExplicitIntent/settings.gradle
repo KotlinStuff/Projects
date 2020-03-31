@@ -1,0 +1,2 @@
+rootProject.name='My Explicit Intent'
+include ':app'

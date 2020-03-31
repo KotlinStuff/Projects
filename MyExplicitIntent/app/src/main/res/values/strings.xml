@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Explicit Intent</string>
+    <string name="myButton">Enviar</string>
+    <string name="hintText">Información a enviar</string>
+</resources>
