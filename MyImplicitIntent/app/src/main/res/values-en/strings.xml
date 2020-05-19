@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Implicit Intent</string>
+    <string name="button_webpage">Open a webpage</string>
+    <string name="button_callphone">Make a phone call</string>
+    <string name="button_takepicture">Take a picture</string>
+    <string name="button_openmap">Open map</string>
+    <string name="button_otheroption">Other option</string>
+</resources>

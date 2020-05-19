@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Implicit Intent</string>
+    <string name="button_webpage">Abrir una página web</string>
+    <string name="button_callphone">Realizar una llamada telefónica</string>
+    <string name="button_takepicture">Hacer una foto</string>
+    <string name="button_openmap">Abrir mapa</string>
+    <string name="button_otheroption">Otra opción</string>
+</resources>
