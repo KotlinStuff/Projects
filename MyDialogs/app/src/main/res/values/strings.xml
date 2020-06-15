@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">My Dialogs</string>
+    <string name="my_first_dialog">Mi primer <i>Dialog</i>,\n¿Te gusta?</string>
+    <string name="showWithDialogFragment">Mostrar con DialogFragment</string>
+    <string name="showAlertDialog">Mostrar con AlertDialog</string>
+    <string name="showAlertDialogList">Mostrar AlertDialog con lista</string>
+    <string name="showAlertDialogSinglePersistentList">Mostrar AlertDialog con lista persistente</string>
+    <string name="showAlertDialogMultiPersistentList">AlertDialog con lista persistente múltiple</string>
+    <string name="showCustomAlertDialog">AlertDialog personalizado</string>
+    <string name="userName">Nombre de usuario</string>
+    <string name="password">Contraseña de usuario</string>
+    <string name="showTimePicker">Mostrar Time Picker</string>
+    <string name="txtTime">Hora</string>
+    <string name="showDatePicker">Mostrar Date Picker</string>
+    <string name="txtDate">Fecha</string>
+    <string name="startProgressBar">Iniciar Progress Bar</string>
+    <string-array name="array_nombres">
+        <item>Javier</item>
+        <item>Nacho</item>
+        <item>Patricia</item>
+        <item>Miguel</item>
+        <item>Susana</item>
+        <item>Rosa</item>
+        <item>Juan</item>
+        <item>Pedro</item>
+        <item>Asunción</item>
+        <item>Antonio</item>
+        <item>Lorena</item>
+        <item>Verónica</item>
+        <item>Paola</item>
+        <item>Esteban</item>
+        <item>Andrea</item>
+        <item>María</item>
+    </string-array>
+</resources>
