@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Threads</string>
+    <string name="txtBtnHiloUno">Hilo 1</string>
+    <string name="txtBtnHiloDos">Hilo 2</string>
+    <string name="txtBtnHiloTres">Hilo 3</string>
+    <string name="txtBtnHiloCuatro">Hilo 4</string>
+</resources>
