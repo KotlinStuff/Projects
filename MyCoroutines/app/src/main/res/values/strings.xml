@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Coroutines</string>
+    <string name="btn_coroutineUno">Corrutina 1</string>
+    <string name="btn_coroutineDos">Corrutina 2</string>
+</resources>
