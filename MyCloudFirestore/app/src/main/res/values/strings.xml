@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Cloud Firestore</string>
+    <string name="btn_add">Añadir</string>
+</resources>
