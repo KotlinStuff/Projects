@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My First Mapbox</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoid2FyaG9sIiwiYSI6ImNrZm9hMzRtNTBmdHEyc3BjdnBrZmM4N3AifQ.cVvqLQgJw7th0BMoF3Do4g</string>
+    <string name="accion">Eliminar marca</string>
+</resources>
