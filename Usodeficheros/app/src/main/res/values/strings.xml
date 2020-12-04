@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Uso de ficheros</string>
+    <string name="btn_SaveFileAppend">Añadir</string>
+    <string name="btn_SaveFileNew">Fichero nuevo</string>
+    <string name="filename">ejemplo.txt</string>
+    <string name="msg_warning1">Los campos no pueden estar vacío.</string>
+    <string name="msg_warning2">El fichero <b>%1$s</b> no existe.</string>
+    <string name="msg_correct">Datos escritos correctamente.</string>
+</resources>
