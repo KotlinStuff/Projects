@@ -1,21 +1,20 @@
 package es.javiercarrasco.mygridview2
 
 import android.os.Bundle
-import android.widget.AdapterView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.get
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.gridview_item.view.*
+import es.javiercarrasco.mygridview2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
 
     var adapter: ItemAdapter? = null
     var itemsList = ArrayList<MyItems>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         // Se crea la fuente de datos con imágenes de muestra.
         itemsList.add(
@@ -53,19 +52,6 @@ class MainActivity : AppCompatActivity() {
         adapter = ItemAdapter(this, itemsList)
 
         // Asignamos el adapter
-        myGridView.adapter = adapter
-    }
-
-    override fun onStart() {
-        super.onStart()
-
-        myGridView.onItemClickListener =
-            AdapterView.OnItemClickListener { parent, view, position, id ->
-                Toast.makeText(
-                    applicationContext,
-                    "Pulsado ${myGridView[position].tvName.text}",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
+        binding.myGridView.adapter = adapter
     }
 }

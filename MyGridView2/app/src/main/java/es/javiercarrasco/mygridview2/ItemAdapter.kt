@@ -5,10 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import kotlinx.android.synthetic.main.gridview_item.view.*
+import android.widget.Toast
+import es.javiercarrasco.mygridview2.databinding.GridviewItemBinding
 
 // Clase ItemAdapter que hereda de la clase abstracta BaseAdapter.
 class ItemAdapter : BaseAdapter {
+
     var context: Context? = null
     var itemsList = ArrayList<MyItems>()
 
@@ -31,27 +33,23 @@ class ItemAdapter : BaseAdapter {
 
         val item = this.itemsList[position]
 
-        var inflator = LayoutInflater.from(context)
+        val inflator = LayoutInflater.from(context)
 
-        var itemView = inflator.inflate(R.layout.gridview_item, null)
-        itemView.image.setImageResource(item.image!!)
-        itemView.tvName.text = item.name!!
+        val binding = GridviewItemBinding.inflate(inflator)
 
-        itemView.image.setImageResource(item.image!!)
-        itemView.tvName.text = item.name!!
+        binding.image.setImageResource(item.image)
+        binding.tvName.text = item.name
 
-        // Control del click sobre el ImageView.
-        /*
-        itemView.image.setOnClickListener {
+        // Pulsación sobre la vista.
+        binding.root.setOnClickListener {
             Toast.makeText(
                 context,
-                "${itemView.image.contentDescription}",
+                "${binding.tvName.text}",
                 Toast.LENGTH_LONG
             ).show()
         }
-        */
 
-        return itemView
+        return binding.root
     }
 
     override fun getItem(position: Int): Any {
