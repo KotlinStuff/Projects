@@ -1,13 +1,16 @@
 package es.javiercarrasco.mygridview2
 
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.get
 import es.javiercarrasco.mygridview2.databinding.ActivityMainBinding
+import es.javiercarrasco.mygridview2.databinding.GridviewItemBinding
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityMainBinding
-
     var adapter: ItemAdapter? = null
     var itemsList = ArrayList<MyItems>()
 
@@ -53,5 +56,20 @@ class MainActivity : AppCompatActivity() {
 
         // Asignamos el adapter
         binding.myGridView.adapter = adapter
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        binding.myGridView.onItemClickListener =
+            AdapterView.OnItemClickListener { parent, view, position, id ->
+                val bindingItem = GridviewItemBinding.bind(view!!)
+
+                Toast.makeText(
+                    applicationContext,
+                    "Pulsado ${bindingItem.tvName.text}",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
     }
 }

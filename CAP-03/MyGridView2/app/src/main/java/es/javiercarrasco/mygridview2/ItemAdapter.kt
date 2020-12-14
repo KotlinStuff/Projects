@@ -41,13 +41,13 @@ class ItemAdapter : BaseAdapter {
         binding.tvName.text = item.name
 
         // Pulsación sobre la vista.
-        binding.root.setOnClickListener {
-            Toast.makeText(
-                context,
-                "${binding.tvName.text}",
-                Toast.LENGTH_LONG
-            ).show()
-        }
+//        binding.root.setOnClickListener {
+//            Toast.makeText(
+//                context,
+//                "${binding.tvName.text}",
+//                Toast.LENGTH_LONG
+//            ).show()
+//        }
 
         return binding.root
     }
