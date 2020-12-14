@@ -1,27 +1,26 @@
 package es.javiercarrasco.mylistview
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import androidx.appcompat.app.AppCompatActivity
+import es.javiercarrasco.mylistview.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
     // Fuente de datos para el ListView.
     private val nombres = arrayOf(
-        "Javier", "Nacho", "Patricia",
-        "Miguel", "Susana", "Rosa", "Juan",
-        "Pedro", "Asunción", "Antonio",
-        "Lorena", "Verónica", "Paola",
+        "Javier", "Nacho", "Patricia", "Miguel", "Susana", "Rosa", "Juan",
+        "Pedro", "Asunción", "Antonio", "Lorena", "Verónica", "Paola",
         "Esteban", "Andrea", "María"
     )
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val nombres2 = resources.getStringArray(R.array.array_nombres)
 
@@ -29,10 +28,10 @@ class MainActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, R.layout.listview_item, nombres2)
 
         // Se asigna el Adapter al Listview.
-        myListView.adapter = adapter
+        binding.myListView.adapter = adapter
 
         // Se utiliza un AdapterView para conocer el elemento pulsado.
-        myListView.onItemClickListener =
+        binding.myListView.onItemClickListener =
             object : AdapterView.OnItemClickListener {
                 override fun onItemClick(
                     parent: AdapterView<*>?,
@@ -42,8 +41,8 @@ class MainActivity : AppCompatActivity() {
                 ) {
                     Toast.makeText(
                         applicationContext,
-                        "Pulsado ${myListView.getItemAtPosition(position)}",
-                        Toast.LENGTH_LONG
+                        "${binding.myListView.getItemAtPosition(position)}",
+                        Toast.LENGTH_SHORT
                     ).show()
                 }
             }
