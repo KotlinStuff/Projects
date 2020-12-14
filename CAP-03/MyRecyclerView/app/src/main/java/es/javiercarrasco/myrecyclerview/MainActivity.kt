@@ -2,31 +2,30 @@ package es.javiercarrasco.myrecyclerview
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_main.*
+import es.javiercarrasco.myrecyclerview.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private val myAdapter : RecyclerAdapter = RecyclerAdapter()
+    private lateinit var binding: ActivityMainBinding
+    private val myAdapter: RecyclerAdapter = RecyclerAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         setUpRecyclerView()
     }
 
-    /**
-     * Método encargado de configurar el RV.
-     */
-    private fun setUpRecyclerView(){
+    // Método encargado de configurar el RV.
+    private fun setUpRecyclerView() {
         // Esta opción a TRUE significa que el RV tendrá
         // hijos del mismo tamaño, optimiza su creación.
-        myRVAnimals.setHasFixedSize(true)
+        binding.myRVAnimals.setHasFixedSize(true)
 
         // Se indica el contexto para RV en forma de lista.
-        myRVAnimals.layoutManager = LinearLayoutManager(this)
+        binding.myRVAnimals.layoutManager = LinearLayoutManager(this)
 
         // Se indica el contexto para RV en forma de grid.
         //myRVAnimals.layoutManager = GridLayoutManager(this, 2)
@@ -35,12 +34,10 @@ class MainActivity : AppCompatActivity() {
         myAdapter.RecyclerAdapter(getAnimals(), this)
 
         // Se asigna el adapter al RV.
-        myRVAnimals.adapter = myAdapter
+        binding.myRVAnimals.adapter = myAdapter
     }
 
-    /**
-     * Método encargado de generar la fuente de datos.
-     */
+    // Método encargado de generar la fuente de datos.
     private fun getAnimals(): MutableList<MyAnimals> {
         val animals: MutableList<MyAnimals> = arrayListOf()
 

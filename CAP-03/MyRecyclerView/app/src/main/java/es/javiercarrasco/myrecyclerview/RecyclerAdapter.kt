@@ -1,14 +1,12 @@
 package es.javiercarrasco.myrecyclerview
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import es.javiercarrasco.myrecyclerview.databinding.ItemAnimalListBinding
 
 class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
@@ -36,11 +34,11 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
     ): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         return ViewHolder(
-            layoutInflater.inflate(
-                R.layout.item_animal_list,
+            ItemAnimalListBinding.inflate(
+                layoutInflater,
                 parent,
                 false
-            )
+            ).root
         )
     }
 
@@ -52,18 +50,13 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
     // Esta clase se encarga de rellenar cada una de las vistas que se inflarán
     // en el RecyclerView.
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        // Aquí es necesario utilizar findViewById para localizar el elemento
-        // de la vista que se pasa como parámetro.
-        private val aniName = view.findViewById(R.id.tv_nameAnimal) as TextView
-        private val latinName = view.findViewById(R.id.tv_latinName) as TextView
-        private val aniImg = view.findViewById(R.id.iv_animalImage) as ImageView
+        // Se usa View Binding para localizar los elementos en la vista.
+        private val binding = ItemAnimalListBinding.bind(view)
 
         fun bind(animal: MyAnimals, context: Context) {
-            Log.d("bind", animal.imageAnimal.toString())
-
-            aniName.text = animal.animalName
-            latinName.text = animal.latinName
-            aniImg.setImageResource(animal.imageAnimal!!)
+            binding.tvNameAnimal.text = animal.animalName
+            binding.tvLatinName.text = animal.latinName
+            binding.ivAnimalImage.setImageResource(animal.imageAnimal!!)
 
             itemView.setOnClickListener {
                 Toast.makeText(

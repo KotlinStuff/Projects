@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="15dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/root_layout_cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_orange_light"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_animalImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/desc_image"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/tv_nameAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/iv_animalImage"
+            android:text="@string/name_text"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_latinName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nameAnimal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/iv_animalImage"
+            android:text="@string/latin_text"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
