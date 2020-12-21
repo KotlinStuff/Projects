@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import es.javiercarrasco.mydialogs.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.dialog_layout.*
+import es.javiercarrasco.mydialogs.databinding.DialogLayoutBinding
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
@@ -137,14 +137,18 @@ class MainActivity : AppCompatActivity() {
         val builder = AlertDialog.Builder(this)
 
         builder.apply {
-            val inflater = layoutInflater
-            setView(inflater.inflate(R.layout.dialog_layout, null))
+            //val inflater = layoutInflater
+            //setView(inflater.inflate(R.layout.dialog_layout, null))
+
+            val bindDialogLayout: DialogLayoutBinding = DialogLayoutBinding.inflate(layoutInflater)
+            setView(bindDialogLayout.root)
 
             setPositiveButton(android.R.string.ok) { dialog, _ ->
                 // En este caso, se accede a los elementos del layout
                 // haciendo uso de Synthetic Binding.
-                val name = (dialog as AlertDialog).username.text
-                val pass = dialog.password.text
+                //val name = (dialog as AlertDialog).username.text
+                val name = bindDialogLayout.username.text
+                val pass = bindDialogLayout.password.text
                 Toast.makeText(
                     context,
                     "User: $name\nPass: $pass",
