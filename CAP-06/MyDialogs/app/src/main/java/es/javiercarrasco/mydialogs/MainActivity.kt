@@ -137,16 +137,12 @@ class MainActivity : AppCompatActivity() {
         val builder = AlertDialog.Builder(this)
 
         builder.apply {
-            //val inflater = layoutInflater
-            //setView(inflater.inflate(R.layout.dialog_layout, null))
-
             val bindDialogLayout: DialogLayoutBinding = DialogLayoutBinding.inflate(layoutInflater)
             setView(bindDialogLayout.root)
 
             setPositiveButton(android.R.string.ok) { dialog, _ ->
-                // En este caso, se accede a los elementos del layout
-                // haciendo uso de Synthetic Binding.
-                //val name = (dialog as AlertDialog).username.text
+                // Se accede a los elementos del layout
+                // haciendo uso de View Binding.
                 val name = bindDialogLayout.username.text
                 val pass = bindDialogLayout.password.text
                 Toast.makeText(
