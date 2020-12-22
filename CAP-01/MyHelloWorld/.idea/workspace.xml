@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_2" />
+        <device id="pixel_3_xl" />
+        <device id="Nexus 9" />
+        <device id="pixel_3a_xl" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75e89226-ecdc-49f9-b127-1cb29fcf8988" name="Default Changelist" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_2_0_4_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_3_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_3_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_3_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_3_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_3_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_3_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_3_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_71.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_71.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/androidTest/java/es/javiercarrasco/myhelloworld/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/ic_mano_boton-playstore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/java/es/javiercarrasco/myhelloworld/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/drawable/ic_mano_boton_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/drawable/ic_mano_vector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-anydpi-v26/ic_mano_boton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-anydpi-v26/ic_mano_boton_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-hdpi/ic_mano_boton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-hdpi/ic_mano_boton_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-hdpi/ic_mano_boton_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-mdpi/ic_mano_boton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-mdpi/ic_mano_boton_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-mdpi/ic_mano_boton_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xhdpi/ic_mano_boton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xhdpi/ic_mano_boton_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xhdpi/ic_mano_boton_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xxhdpi/ic_mano_boton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xxhdpi/ic_mano_boton_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xxhdpi/ic_mano_boton_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xxxhdpi/ic_mano_boton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xxxhdpi/ic_mano_boton_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/mipmap-xxxhdpi/ic_mano_boton_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/app/src/test/java/es/javiercarrasco/myhelloworld/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyHelloWorld/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[My_Pixel_3a_API_24]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Javier Carrasco &lt;informaticadocente@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1YJCWgmk7elpbcaF3V6lgmsp4HQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="192.168.56.101:5555" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-02-25T16:26:49.866Z" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="My_Hello_World.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75e89226-ecdc-49f9-b127-1cb29fcf8988" name="Default Changelist" comment="" />
+      <created>1580912989326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580912989326</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1581069212685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581069212686</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="516" y="279" key="#Notifications" timestamp="1608635107933">
+      <screen x="0" y="25" width="1280" height="775" />
+    </state>
+    <state x="516" y="279" key="#Notifications/0.25.1280.775@0.25.1280.775" timestamp="1608635107933" />
+    <state x="141" y="48" key="SettingsEditor" timestamp="1608635119200">
+      <screen x="0" y="25" width="1280" height="775" />
+    </state>
+    <state x="141" y="48" key="SettingsEditor/0.25.1280.775@0.25.1280.775" timestamp="1608635119200" />
+    <state x="305" y="124" key="search.everywhere.popup" timestamp="1608635771726">
+      <screen x="0" y="25" width="1280" height="775" />
+    </state>
+    <state x="305" y="124" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1608635771726" />
+  </component>
+</project>
