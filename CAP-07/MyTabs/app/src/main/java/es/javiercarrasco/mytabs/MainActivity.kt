@@ -2,6 +2,7 @@ package es.javiercarrasco.mytabs
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import es.javiercarrasco.mytabs.adapters.ViewPagerAdapter
 import es.javiercarrasco.mytabs.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

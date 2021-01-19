@@ -1,4 +1,4 @@
-package es.javiercarrasco.mytabs
+package es.javiercarrasco.mytabs.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -21,7 +21,7 @@ class ViewPagerAdapter(supportFragmentManager: FragmentManager) :
         return mFragmentList.size
     }
 
-    override fun getPageTitle(position: Int): CharSequence? {
+    override fun getPageTitle(position: Int): CharSequence {
         return mFragmentTitleList[position]
     }
 
