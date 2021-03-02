@@ -3,4 +3,8 @@
     <string name="txtTab1">Pestaña 1</string>
     <string name="txtTab2">Pestaña 2</string>
     <string name="txtTab3">Pestaña 3</string>
+
+    <string name="txtFragUno">Fragment UNO</string>
+    <string name="txtFragDos">Fragment DOS</string>
+    <string name="txtFragTres">Fragment TRES</string>
 </resources>
