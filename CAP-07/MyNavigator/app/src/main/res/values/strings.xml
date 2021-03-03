@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">My Navigator</string>
-    <string name="txtTab1">Pestaña 1</string>
-    <string name="txtTab2">Pestaña 2</string>
-    <string name="txtTab3">Pestaña 3</string>
+    <string name="txtBtn1">Pasar al fragment 2</string>
+    <string name="txtBtn2">Pasar al fragment 3</string>
+    <string name="txtBtn3">Pasar al fragment 1</string>
 
     <string name="txtFragUno">Fragment UNO</string>
     <string name="txtFragDos">Fragment DOS</string>
