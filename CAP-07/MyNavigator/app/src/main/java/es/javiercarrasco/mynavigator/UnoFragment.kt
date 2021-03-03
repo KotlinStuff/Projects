@@ -18,8 +18,21 @@ class UnoFragment : Fragment() {
     ): View {
         binding = FragmentUnoBinding.inflate(layoutInflater, container, false)
 
+        if (UnoFragmentArgs.fromBundle(requireArguments()).numFragment != "nulo")
+            binding.textView.text = UnoFragmentArgs.fromBundle(
+                requireArguments()
+            ).numFragment
+        else binding.textView.text = "INICIO"
+
         binding.button.setOnClickListener {
-            findNavController().navigate(UnoFragmentDirections.actionToDosFragment())
+            findNavController().navigate(
+                UnoFragmentDirections.actionToDosFragment(
+                    getString(
+                        R.string.txtFragment,
+                        "DOS"
+                    )
+                )
+            )
         }
 
         return binding.root

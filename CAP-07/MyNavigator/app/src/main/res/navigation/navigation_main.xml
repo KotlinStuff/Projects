@@ -15,6 +15,10 @@
             app:destination="@id/dosFragment_destination"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right" />
+        <argument
+            android:name="numFragment"
+            app:argType="string"
+            android:defaultValue="nulo" />
     </fragment>
     <fragment
         android:id="@+id/dosFragment_destination"
@@ -26,6 +30,10 @@
             app:destination="@id/tresFragment_destination"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right" />
+        <argument
+            android:name="numFragment"
+            app:argType="string"
+            android:defaultValue="nulo" />
     </fragment>
     <fragment
         android:id="@+id/tresFragment_destination"
@@ -37,5 +45,9 @@
             app:destination="@id/unoFragment_destination"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right" />
+        <argument
+            android:name="numFragment"
+            app:argType="string"
+            android:defaultValue="nulo" />
     </fragment>
 </navigation>

@@ -18,8 +18,17 @@ class TresFragment : Fragment() {
     ): View {
         binding = FragmentTresBinding.inflate(layoutInflater, container, false)
 
+        binding.textView.text = TresFragmentArgs.fromBundle(requireArguments()).numFragment
+
         binding.button.setOnClickListener {
-            findNavController().navigate(TresFragmentDirections.actionToUnoFragment())
+            findNavController().navigate(
+                TresFragmentDirections.actionToUnoFragment(
+                    getString(
+                        R.string.txtFragment,
+                        "UNO"
+                    )
+                )
+            )
         }
 
         return binding.root

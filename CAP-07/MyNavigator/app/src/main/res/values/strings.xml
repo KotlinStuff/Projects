@@ -4,7 +4,5 @@
     <string name="txtBtn2">Pasar al fragment 3</string>
     <string name="txtBtn3">Pasar al fragment 1</string>
 
-    <string name="txtFragUno">Fragment UNO</string>
-    <string name="txtFragDos">Fragment DOS</string>
-    <string name="txtFragTres">Fragment TRES</string>
+    <string name="txtFragment">Fragment %s</string>
 </resources>

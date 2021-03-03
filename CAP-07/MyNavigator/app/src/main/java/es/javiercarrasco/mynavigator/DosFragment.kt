@@ -18,8 +18,17 @@ class DosFragment : Fragment() {
     ): View {
         binding = FragmentDosBinding.inflate(layoutInflater, container, false)
 
+        binding.textView.text = DosFragmentArgs.fromBundle(requireArguments()).numFragment
+
         binding.button.setOnClickListener {
-            findNavController().navigate(DosFragmentDirections.actionToTresFragment())
+            findNavController().navigate(
+                DosFragmentDirections.actionToTresFragment(
+                    getString(
+                        R.string.txtFragment,
+                        "TRES"
+                    )
+                )
+            )
         }
 
         return binding.root
