@@ -8,7 +8,7 @@
         android:id="@+id/inicio_destino"
         android:name="es.javiercarrasco.adivinalapalabra.ui.InicioFragment"
         android:label="inicio_fragment"
-        tools:layout="@layout/fragment_inicio" >
+        tools:layout="@layout/fragment_inicio">
         <action
             android:id="@+id/action_to_juego"
             app:destination="@id/juego_destino"
@@ -21,7 +21,7 @@
         android:id="@+id/juego_destino"
         android:name="es.javiercarrasco.adivinalapalabra.ui.JuegoFragment"
         android:label="juego_fragment"
-        tools:layout="@layout/fragment_juego" >
+        tools:layout="@layout/fragment_juego">
         <action
             android:id="@+id/action_to_puntuacion"
             app:destination="@id/puntuacion_destino"
@@ -34,7 +34,7 @@
         android:id="@+id/puntuacion_destino"
         android:name="es.javiercarrasco.adivinalapalabra.ui.PuntuacionFragment"
         android:label="puntuacion_fragment"
-        tools:layout="@layout/fragment_puntuacion" >
+        tools:layout="@layout/fragment_puntuacion">
         <action
             android:id="@+id/action_back_to_juego"
             app:destination="@id/juego_destino"
@@ -44,7 +44,7 @@
             app:popExitAnim="@android:anim/slide_out_right" />
         <argument
             android:name="puntuacion"
-            app:argType="integer"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            app:argType="integer" />
     </fragment>
 </navigation>

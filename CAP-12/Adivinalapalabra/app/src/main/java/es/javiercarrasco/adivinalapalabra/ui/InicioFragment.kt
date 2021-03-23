@@ -26,7 +26,9 @@ class InicioFragment : Fragment() {
         super.onStart()
 
         binding.btnPlay.setOnClickListener {
-            findNavController().navigate(InicioFragmentDirections.actionToJuego())
+            findNavController().navigate(
+                InicioFragmentDirections.actionToJuego()
+            )
         }
     }
 }

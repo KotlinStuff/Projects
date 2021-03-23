@@ -39,12 +39,10 @@ class JuegoFragment : Fragment() {
         return binding.root
     }
 
-    /**
-     * Avanza a la siguiente palabra de la lista.
-     */
+    // Avanza a la siguiente palabra de la lista.
     private fun siguientePalabra() {
         if (!listaPalabras.isEmpty()) {
-            //Select and remove a word from the list
+            // Selecciona la palabra y la elimina de la lista.
             palabra = listaPalabras.removeAt(0)
         }
         updateSigPalabra()
@@ -52,7 +50,9 @@ class JuegoFragment : Fragment() {
     }
 
     private fun iniciaListaPalabras() {
-        listaPalabras = resources.getStringArray(R.array.array_nombres).toMutableList()
+        listaPalabras = resources.getStringArray(
+            R.array.array_nombres
+        ).toMutableList()
         listaPalabras.shuffle()
     }
 
@@ -67,7 +67,9 @@ class JuegoFragment : Fragment() {
     }
 
     private fun onFin() {
-        findNavController().navigate(JuegoFragmentDirections.actionToPuntuacion(puntuacion))
+        findNavController().navigate(
+            JuegoFragmentDirections.actionToPuntuacion(puntuacion)
+        )
     }
 
     private fun updateSigPalabra() {
@@ -75,6 +77,8 @@ class JuegoFragment : Fragment() {
     }
 
     private fun updatePuntuacion() {
-        binding.tvPuntuacion.text = getString(R.string.lbl_txt_puntuacion, puntuacion)
+        binding.tvPuntuacion.text = getString(
+            R.string.lbl_txt_puntuacion, puntuacion
+        )
     }
 }

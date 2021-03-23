@@ -19,10 +19,14 @@ class PuntuacionFragment : Fragment() {
         binding = FragmentPuntuacionBinding.inflate(inflater, container, false)
 
         binding.tvPuntuacionFinal.text =
-            PuntuacionFragmentArgs.fromBundle(requireArguments()).puntuacion.toString()
+            PuntuacionFragmentArgs.fromBundle(
+                requireArguments()
+            ).puntuacion.toString()
 
         binding.btnJugarAgain.setOnClickListener {
-            findNavController().navigate(PuntuacionFragmentDirections.actionBackToJuego())
+            findNavController().navigate(
+                PuntuacionFragmentDirections.actionBackToJuego()
+            )
         }
 
         return binding.root
