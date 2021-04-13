@@ -8,27 +8,6 @@
     <string name="txt_btn_acertar">Acierto</string>
     <string name="txt_btn_fin">Terminar</string>
 
-    <string-array name="array_nombres">
-        <item>Casa</item>
-        <item>Barco</item>
-        <item>Perro</item>
-        <item>Avión</item>
-        <item>Árbol</item>
-        <item>Actor</item>
-        <item>Figura</item>
-        <item>Semáforo</item>
-        <item>Mesa</item>
-        <item>Parque</item>
-        <item>Motocicleta</item>
-        <item>Gato</item>
-        <item>Gorrión</item>
-        <item>Culebra</item>
-        <item>Ratón</item>
-        <item>Televisión</item>
-        <item>Paraguas</item>
-        <item>Armario</item>
-    </string-array>
-
     <string name="lbl_txt_tu_puntuacion">Tu puntuación es…</string>
     <string name="txt_btn_jugar_again">Jugar otra vez</string>
 
