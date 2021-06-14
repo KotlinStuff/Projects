@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Adivina la palabra</string>
+    <string name="txt_btn_jugar">Jugar!</string>
+
+    <string name="lbl_txt_palabra">Palabra a adivinar…</string>
+    <string name="lbl_txt_puntuacion">Puntuación: %1d</string>
+    <string name="txt_btn_pasar">Pasar</string>
+    <string name="txt_btn_acertar">Acierto</string>
+    <string name="txt_btn_fin">Terminar</string>
+
+    <string name="lbl_txt_tu_puntuacion">Tu puntuación es…</string>
+    <string name="txt_btn_jugar_again">Jugar otra vez</string>
+
+</resources>
