@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,7 +17,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintVertical_bias="0.1" />
 
     <TextView
         android:id="@+id/tvYourName"
@@ -27,35 +26,33 @@
         android:text="@string/tv_yourName"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvHelloWorld"
+        app:layout_constraintStart_toStartOf="@+id/tvHelloWorld"
         app:layout_constraintTop_toBottomOf="@+id/tvHelloWorld" />
 
     <EditText
         android:id="@+id/etYourName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/tv_yourNameHere"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvYourName"
+        app:layout_constraintStart_toStartOf="@+id/tvYourName"
         app:layout_constraintTop_toBottomOf="@+id/tvYourName"
-        app:layout_constraintVertical_bias="0.100000024"
-        android:importantForAutofill="no" />
+        app:layout_constraintVertical_bias="0.10" />
 
     <Button
         android:id="@+id/btHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableEnd="@drawable/ic_mano_vector"
         android:text="@string/bt_hello"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etYourName"
+        app:layout_constraintStart_toStartOf="@+id/etYourName"
         app:layout_constraintTop_toBottomOf="@+id/etYourName" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
