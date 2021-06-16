@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Hello World</string>
+    <string name="tv_yourName">¿Cómo te llamas?</string>
+    <string name="bt_hello">Say hello!!</string>
+    <string name="tv_yourNameHere">Your name here</string>
+
+    <string name="msgNeedName">Necesito tu nombre para saludarte.</string>
+    <string name="msgSaludo">Hola %1$s!!</string>
+</resources>

@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyHelloWorld" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/red_200</item>
+        <item name="colorPrimaryVariant">@color/red_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/indigo_200</item>
+        <item name="colorSecondaryVariant">@color/indigo_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MyAppTheme" parent="Theme.MyHelloWorld">
+        <item name="colorPrimary">#5D00FF</item>
+        <item name="colorPrimaryDark">#350985</item>
+        <item name="colorAccent">#ECA529</item>
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:textColorSecondary">#E051F0</item>
+    </style>
+
+    <style name="MyCodeFont" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+</resources>
