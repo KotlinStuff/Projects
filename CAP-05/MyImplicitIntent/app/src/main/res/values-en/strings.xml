@@ -5,5 +5,9 @@
     <string name="button_callphone">Make a phone call</string>
     <string name="button_takepicture">Take a picture</string>
     <string name="button_openmap">Open map</string>
+    <string name="button_sendSMS" >Send SMS</string>
+    <string name="button_setAlarm" >Set alarm</string>
+    <string name="button_sendEmail" >Send an email</string>
+    <string name="button_takepicture2">Take a photo and get it back</string>
     <string name="button_otheroption">Other option</string>
 </resources>
