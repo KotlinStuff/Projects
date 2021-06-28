@@ -1,4 +1,4 @@
-package es.javiercarrasco.myexplicitintent2
+package es.javiercarrasco.myexplicitintent2b
 
 import android.app.Activity
 import android.content.Intent
@@ -6,17 +6,34 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
+import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import androidx.appcompat.app.AppCompatActivity
-import es.javiercarrasco.myexplicitintent2.databinding.ActivityMainBinding
+import es.javiercarrasco.myexplicitintent2b.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     // View Binding
     private lateinit var binding: ActivityMainBinding
-    private var REQUEST_CODE = 1234
 
     companion object {
-        const val TAG_APP = "myExplicitIntent2"
+        const val TAG_APP = "myExplicitIntent2B"
         const val EXTRA_NAME = "userNAME"
+    }
+
+    // Objeto para recoger la respuesta de la activity.
+    var resultadoActivity = registerForActivityResult(StartActivityForResult()) { result ->
+
+        if (result.resultCode == Activity.RESULT_OK) {
+            // No se usan los REQUEST_CODE
+            val data: Intent? = result.data
+
+            binding.tvResult.text = "Condiciones aceptadas."
+            binding.tvResult.visibility = View.VISIBLE
+        }
+
+        if (result.resultCode == Activity.RESULT_CANCELED) {
+            binding.tvResult.text = "Se canceló el contrato!"
+            binding.tvResult.visibility = View.VISIBLE
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,23 +72,7 @@ class MainActivity : AppCompatActivity() {
             // Se añade la información a pasar por clave-valor.
             putExtra(EXTRA_NAME, binding.textToSend.text.toString())
         }
-        // Se lanza la activity.
-        startActivityForResult(myIntent, REQUEST_CODE)
-    }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-
-        if (requestCode == REQUEST_CODE) {
-            if (resultCode == Activity.RESULT_OK) {
-                binding.tvResult.text = "Condiciones aceptadas."
-                binding.tvResult.visibility = View.VISIBLE
-            }
-
-            if (resultCode == Activity.RESULT_CANCELED) {
-                binding.tvResult.text = "Se canceló el contrato!"
-                binding.tvResult.visibility = View.VISIBLE
-            }
-        }
+        resultadoActivity.launch(myIntent)
     }
 }

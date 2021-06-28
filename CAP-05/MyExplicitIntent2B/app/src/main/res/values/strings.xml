@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Explicit Intent 2 B</string>
+    <string name="myButton">Enviar</string>
+    <string name="hintText">Información a enviar</string>
+    <string name="btn_accept">Aceptar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="msgAccept">Hola %s, ¿aceptas las condiciones?</string>
+</resources>
