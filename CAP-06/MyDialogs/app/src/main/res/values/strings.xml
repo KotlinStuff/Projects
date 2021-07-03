@@ -14,6 +14,7 @@
     <string name="showDatePicker">Mostrar Date Picker</string>
     <string name="txtDate">Fecha</string>
     <string name="startProgressBar">Iniciar Progress Bar</string>
+
     <string-array name="array_nombres">
         <item>Javier</item>
         <item>Nacho</item>
