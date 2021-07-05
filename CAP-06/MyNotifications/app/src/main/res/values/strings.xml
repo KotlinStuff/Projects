@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">My Notifications</string>
-    <string name="btn_primeraNotificacion">Mi primera notificación</string>
-    <string name="txt_notificacionRecibida">Has recibido una notificación!!</string>
-
-    <string name="txt_channel1_name">Canal 1</string>
-    <string name="txt_channel1_desc">Canal 1 de la aplicación My Notifications.</string>
-</resources>
