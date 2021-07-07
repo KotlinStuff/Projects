@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--// https://www.materialui.co/colors //-->
+    <color name="blue_200">#FF90CAF9</color>
+    <color name="blue_500">#FF2196F3</color>
+    <color name="blue_700">#FF1976D2</color>
+    <color name="cyan_200">#FF80DEEA</color>
+    <color name="cyan_700">#FF0097A7</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Mis colores //-->
+    <color name="tabSelected">#FF64b5f6</color>
+</resources>
