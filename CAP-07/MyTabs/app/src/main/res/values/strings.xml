@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">My Tabs</string>
-    <string name="text_persons">Personas</string>
-    <string name="text_fruits">Frutas</string>
-    <string name="text_animals">Animales</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-</resources>
