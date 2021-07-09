@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Tabs v.3.0.</string>
+    <string name="textAMostrar">Cuerpo del texto a mostrar en el fragment %d.</string>
+</resources>

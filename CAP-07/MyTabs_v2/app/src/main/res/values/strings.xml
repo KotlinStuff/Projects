@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Tabs v.2.0.</string>
+    <string name="text_persons">Personas</string>
+    <string name="text_fruits">Frutas</string>
+    <string name="text_animals">Animales</string>
+</resources>
