@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">My Preferences</string>
-    <string name="menu_op_pref">Preferencias</string>
-    <string name="pref_name">Nombre</string>
-    <string name="txt_btn_deletePrefs">Eliminar</string>
-</resources>

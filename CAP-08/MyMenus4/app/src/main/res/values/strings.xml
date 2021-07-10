@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">My Menus 4</string>
-    <string name="menu_op_save">Guardar</string>
-    <string name="menu_op_delete">Eliminar</string>
-    <string name="menu_op_archive">Archivar</string>
-    <string name="desc_btn">ImageButton</string>
-</resources>
