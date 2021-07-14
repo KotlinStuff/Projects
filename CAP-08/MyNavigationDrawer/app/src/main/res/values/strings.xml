@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Navigation Drawer</string>
+    <string name="txt_open">Abrir</string>
+    <string name="txt_close">Cerrar</string>
+    <string name="txtActMainLabel">Actividad principal</string>
+
+    <string name="txtHeader1">My Navigation Drawer</string>
+    <string name="txtHeader2">Javier Carrasco</string>
+    <string name="txtHeader3">Foto de perfil</string>
+    <string name="txtHeader4">Desarrollo de aplicaciones móviles en Kotlin</string>
+
+    <string name="txtMenu11">Inicio</string>
+    <string name="txtMenu12">Opción 2</string>
+    <string name="txtMenu13">Opción 3</string>
+    <string name="txtMenu14">Opción 4</string>
+
+    <string name="txtSubgrupo">Subgrupo</string>
+    <string name="txtMenu21">Otra opción 1</string>
+    <string name="txtMenu22">Otra opción 2</string>
+</resources>
