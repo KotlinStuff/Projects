@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My SQLite</string>
+    <string name="label_nombre">Nombre:</string>
+    <string name="label_apellido">Apellidos:</string>
+    <string name="hint_identificador">Identificador del registro</string>
+    <string name="aviso_identificador">Identificador</string>
+    <string name="bt_insertar">Insertar</string>
+    <string name="bt_actualizar">Actualizar</string>
+    <string name="bt_eliminar">Eliminar</string>
+    <string name="bt_consultar">Consultar datos</string>
+    <string name="bt_ver_listview">Ver datos en un Listview</string>
+    <string name="bt_ver_recyclerview">Ver datos en un Recyclerview</string>
+    <string name="txt_imagen">Imagen de amigo</string>
+</resources>
