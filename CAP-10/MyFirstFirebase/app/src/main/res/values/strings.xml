@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My First Firebase</string>
+    <string name="txt_btn_addUsers">Añadir usuarios a Firebase</string>
+    <string name="txt_btn_updateUsers">Actualizar usuarios en Firebase</string>
+    <string name="txt_btn_deleteUsers">Eliminar usuarios de Firebase</string>
+    <string name="txtNombreGato">Nombre: %s</string>
+    <string name="txtRazaGato">Raza: %s</string>
+</resources>
