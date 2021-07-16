@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">My Cloud Firebase 2</string>
-    <string name="btn_add">Crear colección</string>
-    <string name="btn_del">Eliminar colección</string>
-</resources>
