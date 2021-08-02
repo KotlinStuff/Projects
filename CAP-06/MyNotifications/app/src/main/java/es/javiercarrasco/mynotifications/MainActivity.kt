@@ -7,6 +7,9 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.os.VibrationEffect
+import android.os.Vibrator
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
@@ -17,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private val CHANNELID1 = "es.javiercarrasco.mynotifications"
     private val notificationId1 = 123456
     private lateinit var binding: ActivityMainBinding
+    private lateinit var vibrador: Vibrator
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,13 +59,12 @@ class MainActivity : AppCompatActivity() {
         binding.btnPrimeraNotificacion.setOnClickListener {
             with(NotificationManagerCompat.from(this)) {
                 notify(notificationId1, builder.build())
+                vibrar()
             }
         }
     }
 
-    /**
-     * Método encargado de registrar los caneles de notificaciones.
-     */
+    // Método encargado de registrar los caneles de notificaciones.
     private fun createNotificationChannel(
         channel: String, name: Int,
         desc: Int, importance: Int
@@ -80,5 +83,40 @@ class MainActivity : AppCompatActivity() {
                         as NotificationManager
             notificationManager.createNotificationChannel(channel)
         }
+    }
+
+    private fun vibrar() {
+        // Se instancia el objeto Vibrator.
+        vibrador = getSystemService(VIBRATOR_SERVICE) as Vibrator
+
+        // Se comprueba la existencia de vibrador.
+        if (!vibrador.hasVibrator()) {
+            Toast.makeText(
+                applicationContext,
+                "No tienes vibrador!!",
+                Toast.LENGTH_SHORT
+            ).show()
+        } else {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                val vibrationEffect =
+                    VibrationEffect.createOneShot(
+                        10000,
+                        VibrationEffect.DEFAULT_AMPLITUDE
+                    )
+                vibrador.vibrate(vibrationEffect)
+            } else {
+                vibrador.vibrate(1000) // Deprecated API 26
+                Toast.makeText(
+                    applicationContext,
+                    "Deprecated version",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        vibrador.cancel()
     }
 }
