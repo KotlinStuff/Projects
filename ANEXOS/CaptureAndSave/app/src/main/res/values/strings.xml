@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Capture And Save</string>
+    <string name="btn_txt_capture">Take a picture</string>
+
+    <!-- Avisos -->
+    <string name="info_picture_canceled">No se capturó ninguna imagen</string>
+
+    <!-- Texto dialogos -->
+    <string name="dialog_permissions_title">Permisos de aplicación</string>
+    <string name="dialog_permissions_text">Deberás conceder el permiso desde los ajustes de la aplicación.</string>
+
+    <!-- Texto Activity detalle -->
+    <string name="label_name">File: %s</string>
+</resources>

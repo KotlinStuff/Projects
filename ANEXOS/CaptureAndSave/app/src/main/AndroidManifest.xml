@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.javiercarrasco.captureandsave">
+
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/captureandsave"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/captureandsave"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CaptureAndSave">
+        <activity
+            android:name=".DetailPictureActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="es.javiercarrasco.captureandsave"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_file" />
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
